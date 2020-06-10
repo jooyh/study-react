@@ -37,21 +37,6 @@ export default class App extends Component {
     }
     return (
       <div className="App">
-        {/* <header>
-          <h1>
-            <a
-              href="/"
-              onClick={function (e) {
-                console.log("TEST", e)
-                this.setState({ mode: "welcome" })
-                e.preventDefault()
-              }.bind(this)}
-            >
-              {this.state.subject.title}
-            </a>
-          </h1>
-          {this.state.subject.sub}
-        </header> */}
         <Subject
           title={this.state.subject.title}
           sub={this.state.subject.sub}
