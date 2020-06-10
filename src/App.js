@@ -45,16 +45,6 @@ export default class App extends Component {
       _article = (
         <CreateContent
           onSubmit={function (_title, _desc) {
-            // this.state.contents.push({
-            //   id: this.max_content_id + 1,
-            //   title: _title,
-            //   desc: _desc,
-            // })
-            // var _contents = this.state.contents.concat({
-            //   id: this.max_content_id + 1,
-            //   title: _title,
-            //   desc: _desc,
-            // })
             //Array 의 복제 객체 생성 내장함수 (깊은복사)
             var _contents = Array.from(this.state.contents)
             console.log("TEST", _contents === this.state.contents)
@@ -88,7 +78,6 @@ export default class App extends Component {
             this.setState({ mode: _mode })
           }.bind(this)}
         ></Control>
-        {/* <ReadContent title={_title} desc={_desc}></ReadContent> */}
         {_article}
       </div>
     )
